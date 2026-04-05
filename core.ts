@@ -1477,7 +1477,6 @@ export function subclassing(def: ObjCClassDefinition): typeof ObjCClass {
         if (!imp) {
             throw new Error(`Failed to create IMP for method ${methodName} of class ${name}.`);
         }
-        console.log(`Adding method ${isClassMethod ? "+" : "-"}[${name} ${fullMethodName}] with type encoding ${typeEncoding} and IMP ${imp}.`);
         const success = foundation.class_addMethod(newClassPtr, sel, imp, Buffer.from(typeEncoding + "\0"));
         if (!success) {
             throw new Error(`Failed to add method ${methodName} to class ${name}.`);
