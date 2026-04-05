@@ -1,3 +1,6 @@
+//// Copyright (C) 2026 The Calendrical System
+//// SPDX-License-Identifier: 0BSD
+
 import { dlopen, FFIType, type ConvertFns, type FFITypeToArgsType, suffix, read, type Pointer, toArrayBuffer, JSCallback, ptr, type FFITypeOrString, toBuffer } from "bun:ffi";
 import { mkdir } from "node:fs/promises";
 import path from "node:path";
