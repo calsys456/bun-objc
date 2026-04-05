@@ -4,6 +4,8 @@ This is an Proof-of-Concept implementation of JS/TS <=> Objective-C bridge using
 
 [简体中文](./README_zh.md)
 
+![Preview](./preview.png)
+
 ## Reality Check
 
 [Developer's message: Listen well.](https://moapyr.fandom.com/wiki/Reality_Check) I'm not ever an Obj-C programmer. In fact, I'm a Common Lisp programmer with a MacBook. When the [Symbolics](https://en.wikipedia.org/wiki/Symbolics) [Genera](https://en.wikipedia.org/wiki/Genera_(software)) fells down, there were those of us that has a will of pursue of Graphical User Interface. Thus, I started [my first attempt](https://github.com/calsys456/objc) of Obj-C bridging.

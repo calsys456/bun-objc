@@ -4,6 +4,8 @@
 
 [English](./README.md)
 
+![预览](./preview.png)
+
 ## 现实与真实
 
 [开发者的讯息：接下来的话你要仔细听好：](https://moapyr.fandom.com/zh/wiki/%E7%8E%B0%E5%AE%9E%E4%B8%8E%E7%9C%9F%E5%AE%9E) 我从未是一个 Obj-C 程序员，我只是个拥有一台 MacBook 的 Common Lisp 爱好者。我们这些执着于图形用户界面（GUI）的人在 [Lisp Machine](https://en.wikipedia.org/wiki/Lisp_machine) 的号召下走到了一起，然而失败不期而至， [Symbolics](https://en.wikipedia.org/wiki/Symbolics) [Genera](https://en.wikipedia.org/wiki/Genera_(software)) 在我们做好准备之前就土崩瓦解了。因此，我开始了对 Obj-C 连接桥的[第一次尝试](https://github.com/calsys456/objc)。
