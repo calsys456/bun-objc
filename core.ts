@@ -1210,6 +1210,7 @@ class _ObjCClass extends ObjCId {
         }
     }
 }
+
 const _ObjCIdHandler: ProxyHandler<ObjCClass> = {
     get(target, prop) {
         if (prop.toString().startsWith("__ts_objc_")) {

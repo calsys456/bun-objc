@@ -145,7 +145,7 @@ And, Obj-C property has [Property Attributes](https://developer.apple.com/librar
 
 ### 3. Handle complex call
 
-You can only trust `objc_msgSend` when things are easy, especially when your FFI primitives are too simple. When complex things involved, like by-value structure pass or return, use `[NSInvocation](https://developer.apple.com/documentation/foundation/nsinvocation?language=objc)`, or use `[objc_msgSend_stret](https://developer.apple.com/documentation/objectivec/objc_msgsend_stret?language=objc)`. "stret" means "structure return". Especially when there's by-value HFA you can only use `objc_msgSend` or `objc_msgSend_stret` as `NSInvocation` will not set `D0` to `D31` for you and therefore crash.
+You can only trust `objc_msgSend` when things are easy, especially when your FFI primitives are too simple. When complex things involved, like by-value structure pass or return, use [`NSInvocation`](https://developer.apple.com/documentation/foundation/nsinvocation?language=objc), or use [`objc_msgSend_stret`](https://developer.apple.com/documentation/objectivec/objc_msgsend_stret?language=objc). "stret" means "structure return". Especially when there's by-value HFA you can only use `objc_msgSend` or `objc_msgSend_stret` as `NSInvocation` will not set `D0` to `D31` for you and therefore crash.
 
 And when sending to `super`, use `objc_msgSendSuper` or `objc_msgSendSuper_stret`. You also need to assemble `objc_super` struct yourself, it's 16 bytes with 1 pointer to receiver + 1 pointer to superclass.
 
